@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="question">Kathmandu is the capital of kathmandu</string>
+    <string name="question_1">Messi won the world cup 2022?</string>
+    <string name="question_2">Australia won the cricket world cup 2023?</string>
+    <string name="question_3">Euro 2020 won by England ?</string>
+    <string name="correct">True</string>
+    <string name="incorrect">False</string>
+    <string name="next">Next</string>
+    <string name="correctanswer">Correct</string>
+    <string name="incorrectanswer">InCorrect</string>
+
+
+</resources>
