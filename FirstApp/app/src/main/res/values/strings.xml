@@ -6,6 +6,7 @@
     <string name="question_3">Euro 2020 won by England ?</string>
     <string name="correct">True</string>
     <string name="incorrect">False</string>
+    <string name="prev">Previous</string>
     <string name="next">Next</string>
     <string name="correctanswer">Correct</string>
     <string name="incorrectanswer">InCorrect</string>

@@ -18,11 +18,9 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private Button trueButton;
-
     private  Button falseButton;
-
     private  Button nextButton;
-
+    private Button prevButton;
 
     private int current_index =0;
 
@@ -49,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         trueButton = findViewById(R.id.correct);
         falseButton = findViewById(R.id.incorrect);
+        prevButton = findViewById(R.id.prev);
         nextButton = findViewById(R.id.next);
 
         trueButton.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +76,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        prevButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(current_index <=0){
+                    current_index = questions.length -1;
+
+                }else{
+                    current_index --;
+                }
+                questionTextView.setText(questions[current_index].getQuestionId());
+
+
+            }
+        });
+
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,6 +103,19 @@ public class MainActivity extends AppCompatActivity {
                 questionTextView.setText(questions[current_index].getQuestionId());
 
             }
+        });
+        questionTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(current_index >= questions.length-1 ) {
+                    current_index =0;
+                }else{
+                    current_index ++;
+                }
+                questionTextView.setText(questions[current_index].getQuestionId());
+
+            }
+
         });
 
         }
