@@ -1,0 +1,48 @@
+package com.example.moviesearch;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import com.squareup.picasso.Picasso;
+
+import java.util.List;
+
+public class MovieAdapter extends ArrayAdapter<Movie> {
+    private List<Movie> movies;
+
+  public MovieAdapter(Context context, List<Movie> movies){
+      super(context, 0, movies);
+      this.movies = movies;
+  }
+
+    @NonNull
+    @Override
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        if(convertView == null){
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.movie_item, parent, false);
+
+        }
+        Movie currentMovie = movies.get(position);
+
+        ImageView posterView = convertView.findViewById(R.id.posterId);
+        TextView titleView = convertView.findViewById(R.id.movieNameId);
+        TextView ratingView = convertView.findViewById(R.id.rateId);
+        TextView descriptionView = convertView.findViewById(R.id.descId);
+
+
+        titleView.setText(currentMovie.getTitle());
+        ratingView.setText(String.format("%s", currentMovie.getRating()));
+        descriptionView.setText(currentMovie.getDescription());
+        Picasso.get().load(currentMovie.getPosterUrl()).into(posterView);
+
+        return convertView;
+    }
+}

@@ -1,3 +1,5 @@
+package prashant.com;
+
 public class EmailItem {
     private String titleInitial;
     private String title;

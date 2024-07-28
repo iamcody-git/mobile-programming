@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+    <string name="question_1">Charles Baggage is the father of computer?</string>
+    <string name="question_2">Does Nepal play in football world cup?</string>
+    <string name="correct">True</string>
+    <string name="incorrect">False</string>
+    <string name="prev">Previous</string>
+    <string name="next">Next</string>
+    <string name="correctAns">correct</string>
+    <string name="incorrectAns">incorrect</string>
+</resources>

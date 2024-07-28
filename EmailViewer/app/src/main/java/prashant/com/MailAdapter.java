@@ -1,3 +1,5 @@
+package prashant.com;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,8 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-
-import prashant.com.R;
 
 public class MailAdapter extends RecyclerView.Adapter<MailViewHolder> {
 
@@ -34,8 +34,6 @@ public class MailAdapter extends RecyclerView.Adapter<MailViewHolder> {
         holder.initalTextView.setText(currentItem.getTitleInitial());
         holder.titleView.setText(currentItem.getTitle());
         holder.contentView.setText(currentItem.getContent());
-
-
     }
 
 
@@ -55,7 +53,7 @@ class MailViewHolder extends RecyclerView.ViewHolder{
 
         initalTextView = itemView.findViewById(R.id.inital);
         titleView= itemView.findViewById(R.id.title);
-        contentView = initalTextView.findViewById(R.id.content);
+        contentView = itemView.findViewById(R.id.content);
     }
 }
 

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LoogedIn</string>
+    <string name="nameHint">Enter your name</string>
+    <string name="pwdHint">Enter your password </string>
+    <color name="primeColor">#77E4C8</color>
+    <string name="submit">Submit</string>
+    <string name="menu">New Student list</string>
+    <string name="addStd">Add Student</string>
+    <string name="address">Enter your EmailAddress</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

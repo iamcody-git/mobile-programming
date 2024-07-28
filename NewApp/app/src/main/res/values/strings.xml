@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NewApp</string>
+    <string name="quiz_1">Ada is the first programmer?</string>
+    <string name="quiz_2">Baggage is the father of computer?</string>
+    <string name="quiz_3">Cody is the developer of android programming?</string>
+    <string name="correct">True</string>
+    <string name="prev">Previous</string>
+    <string name="next">Next</string>
+    <string name="incorrect">False</string>
+    <string name="correctAns">Correct</string>
+    <string name="incorrectAns">Incorrect</string>
+    <string name="cheat">cheat</string>
+    <string name="warning_text">Are you sure want to cheat?</string>
+    <string name="judgement_toast">Cheating is wrong.</string>
+    <string name="show_ans_button">show Answer</string>
+</resources>

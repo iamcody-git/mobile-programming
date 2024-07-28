@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BlankFragment">
+    android:orientation="vertical"
+
+
+    tools:context=".CrimeFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Crime Title"
+        android:layout_marginTop="16dp"
+        style="?android:listSeparatorTextViewStyle"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/crimeTitleHint"
+        android:id="@+id/crimeTitleTextBox"
+    />
 
-</FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        style="?android:listSeparatorTextViewStyle"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateButton"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        android:id="@+id/crimeSolved"
+        android:layout_margin="16dp"
+        android:layout_marginRight="16dp"
+
+        />
+
+
+</LinearLayout>

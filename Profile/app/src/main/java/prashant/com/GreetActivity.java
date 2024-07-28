@@ -1,6 +1,7 @@
 package prashant.com;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +9,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class GreetaActivity extends AppCompatActivity {
+public class GreetActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +21,9 @@ public class GreetaActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        TextView handleTextView = findViewById(R.id.hello_input);
+        String text =getIntent().getStringExtra("text");
+        handleTextView.setText(text);
     }
 }

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MovieSearch</string>
+    <string name="movieInput">Enter movie name</string>
+    <string name="btn1">Search</string>
+</resources>

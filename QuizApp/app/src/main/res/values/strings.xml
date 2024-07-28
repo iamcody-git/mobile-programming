@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="quiz">Question-1</string>
+    <string name="question">Argentina won the football world cup 2022?</string>
+    <string name="question_1">Nepal play world cup 2024?</string>
+    <string name="question_2">India is the largest country?</string>
+    <string name="correct">True</string>
+    <string name="incorrect">False</string>
+    <string name="next">Next</string>
+    <string name="prev">Previous</string>
+    <string name="correctAnswer">Correct</string>
+    <string name="incorrectAnswer">Incorrect</string>
+</resources>

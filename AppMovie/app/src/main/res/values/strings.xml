@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppMovie</string>
+    <string name="inputBox">Enter movie name</string>
+    <string name="searchBtn">Search</string>
+    <string name="mubbin">Mubbin</string>
+    <string name="_9_2">9.2</string>
+    <string name="description">Description</string>
+</resources>
