@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/movieInputId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter movie name" />
+
+        <Button
+            android:id="@+id/searchId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_below="@id/movieInputId" />
+
+        <ListView
+            android:id="@+id/listViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchId" />
+
+        <TextView
+            android:id="@+id/textViewNoResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie not found"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+

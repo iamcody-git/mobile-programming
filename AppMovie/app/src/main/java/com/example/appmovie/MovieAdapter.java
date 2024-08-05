@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 public class MovieAdapter extends ArrayAdapter<Movie> {
@@ -39,6 +41,7 @@ public class MovieAdapter extends ArrayAdapter<Movie> {
         titleView.setText(currentMovie.getTitle());
         ratingView.setText(String.format("%s",currentMovie.getRating()));
         descView.setText(currentMovie.getDescription());
+        Picasso.get().load(currentMovie.getPosterUrl()).into(posterView);
 
         return convertView;
 

@@ -28,7 +28,7 @@ import java.util.List;
 import cz.msebera.android.httpclient.Header;
 
 public class MovieActivity extends AppCompatActivity {
-    private  TextInputEditText nameText;
+    private TextInputEditText nameText;
 
 
     @Override
@@ -38,8 +38,7 @@ public class MovieActivity extends AppCompatActivity {
 
         ListView listView = findViewById(R.id.ListViewId);
         Button searchButton = findViewById(R.id.submitButton);
-       nameText = findViewById(R.id.movieInputEditText);
-
+        nameText = findViewById(R.id.movieInputEditText);
 
 
         //  String[] movies = {"pulp fiction", "before sunrise", "hulk"};
@@ -59,14 +58,14 @@ public class MovieActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String API_KEY = "615ed2bc";
-                String API_URL ="http://omdbapi.com/";
+                String API_URL = "http://omdbapi.com/";
                 String Name = nameText.getText().toString();
 
                 RequestParams params = new RequestParams("apikey", API_KEY);
-                params.add("s",Name);
+                params.add("s", Name);
 
                 AsyncHttpClient client = new AsyncHttpClient();
-                client.get(API_URL, params, new JsonHttpResponseHandler(){
+                client.get(API_URL, params, new JsonHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
 //                       Log.d("api", "Status Code :" + statusCode + " response : " + response.toString());
@@ -75,14 +74,12 @@ public class MovieActivity extends AppCompatActivity {
                             JSONArray items = response.getJSONArray("Search");
                             ArrayList<Movie> movies = new ArrayList<Movie>();
 
-                            for(int i=0; i<items.length(); i++){
+                            for (int i = 0; i < items.length(); i++) {
                                 JSONObject singleItem = items.getJSONObject(i);
                                 Movie movie = new Movie();
                                 movie.setTitle(singleItem.getString("Title"));
                                 movie.setPosterUrl(singleItem.getString("Poster"));
-
                                 movies.add(movie);
-
                             }
 
                             movieAdapter.clear();

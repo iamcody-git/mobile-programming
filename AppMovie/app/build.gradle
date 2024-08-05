@@ -29,7 +29,8 @@ android {
 }
 
 dependencies {
-
+    implementation libs.async
+    implementation libs.picasso
     implementation libs.appcompat
     implementation libs.material
     testImplementation libs.junit
